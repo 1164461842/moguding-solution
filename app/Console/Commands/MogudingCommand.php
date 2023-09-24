@@ -77,10 +77,12 @@ class MogudingCommand extends Command
         $this->info('登录成功！');
 
         $this->info('正在获取用户信息...');
+        sleep(30)
 
         $this->info('获取用户信息成功！');
 
         $this->info('正在获取计划列表...');
+        return 
         // 获取计划列表
         try {
             $plans = $moguding->getPlanList(new UserParam(
